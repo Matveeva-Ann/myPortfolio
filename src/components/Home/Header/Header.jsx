@@ -25,8 +25,8 @@ export default function Header() {
 
   const handleDownload = () => {
     const anchor = document.createElement('a');
-    anchor.href = 'https://myportfolio-xlco.onrender.com/Anna_Matvieieva_Frontend_Developer_EN_UA.pdf'; 
-    anchor.download = 'Anna Matvieieva - Frontend Developer(EN UA).pdf';
+    anchor.href = 'https://drive.google.com/file/d/1f490xge0pD3e5J-9Vz90xnfBY51v3ynZ/view?usp=sharing'; 
+    anchor.download = 'Anna_Matvieieva_Frontend_Developer(EN_UA).pdf';
     anchor.click();
   };
 
