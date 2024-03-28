@@ -1,0 +1,15 @@
+.home {
+  color: var(--textColor);
+  background-color: var(--BGColor);
+  min-height: calc(100vh - 115px);
+}
+
+.home__infoWrapper {
+  padding: 30px;
+  display: flex;
+}
+
+.imgBulb {
+  max-width: 120px;
+  margin: -140px 100px 0 auto;
+}

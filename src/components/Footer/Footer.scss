@@ -1,0 +1,11 @@
+
+.footer {
+  background-color: var(--BGColor);
+  color: #000;
+  font-weight: 600;
+  background-image: url(../../assets/icons/footer-blob.svg);
+  height: 260px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 50px;
+}

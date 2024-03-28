@@ -1,0 +1,75 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 100px;
+  font-family: 'Kurale-Regular';
+  background-color: var(--BGColor);
+  color: var(--textColor);
+}
+
+.navigation {
+  display: flex;
+  gap: 35px;
+  font-size: 30px;
+}
+
+.logo {
+  font-size: 35px;
+  font-family: 'GloriaHallelujah-Regular';
+}
+
+.navigation__link {
+  padding: 15px 5px;
+}
+
+.songBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px;
+  color: var(--textColor);
+  border: none;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.headerNuv__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navigation__item {
+  position: relative;
+
+  &--resume {
+    cursor: pointer;
+  }
+}
+
+.nav-circle {
+  position: absolute;
+  top: -10px;
+  left: -14px;
+  width: 130px;
+  height: 70px;
+  color: var(--textColor);
+  display: none;
+
+  &--long {
+    width: 160px;
+  }
+
+  &--shirt {
+    width: 115px;
+  }
+}
+
+.navigation__link {
+  &.active+.nav-circle {
+    display: block;
+  }
+}

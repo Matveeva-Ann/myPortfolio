@@ -1,0 +1,69 @@
+
+.banner__img {
+  max-width: 450px;
+  width: 100%;
+  height: auto; 
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 0 auto 20px;
+}
+
+.banner__wrapper {
+  position: relative;
+  width: 50%;
+}
+
+.banner__infoLeft {
+  position: absolute;
+  top: 20px;
+  left: -5px;
+  display: flex;
+  gap: 20px;
+}
+
+.banner__BtnInfo {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  display: flex;
+  gap: 20px;
+}
+
+.banner__infoText {
+  max-width: 200px;
+  margin-top: -50px;
+  font-family: 'GloriaHallelujah-Regular';
+  font-size: 15px;
+  color: var(--textColorSecondary);
+  transform: rotate(5deg);
+}
+
+.banner__arrow {
+  transform: rotate(30deg);
+  color: var(--textColorSecondary);
+}
+
+.banner__btnGame {
+  display: block;
+  padding: 5px 20px;
+  margin: 0 auto;
+  font-size: 18px;
+  background-color: transparent;
+  color: var(--textColor);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  letter-spacing: 1.1px;
+  position: relative;
+}
+
+.banner__btnGame--arrow {
+  transform: rotate(-150deg);
+  color: var(--textColorSecondary);
+}
+
+.banner__BtnInfoText {
+  margin-top: 10px;
+  color: var(--textColorSecondary);
+  font-size: 14px;
+}
