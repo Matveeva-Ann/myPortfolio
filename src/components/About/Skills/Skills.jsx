@@ -31,7 +31,7 @@ export default function Skills() {
     console.log(randomPosition);
     const translateValue = 500 - index * 50;
     return {
-      animationDuration: `${animationDuration}s`,
+      '--animationDuration': `${animationDuration}s`,
       "--translate-value": `${translateValue}px`,
     };
   };

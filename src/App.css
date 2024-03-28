@@ -10,3 +10,13 @@ body {
   --textColorSecondary: rgb(0 255 255); 
   --BGColor: rgb(2, 63, 81); 
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #969696;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(76, 76, 76);
+  border-radius: 5px;
+}
