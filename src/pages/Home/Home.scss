@@ -7,9 +7,27 @@
 .home__infoWrapper {
   padding: 30px;
   display: flex;
+
+  @media (width < 1200px) {
+    padding-top: 50px;
+  }
+
+  @media (width < 900px) {
+    padding-top: 20px;
+  }
 }
 
 .imgBulb {
   max-width: 120px;
   margin: -140px 100px 0 auto;
+  position: relative;
+  z-index: 2;
+
+  @media (width < 1000px) {
+    margin: -95px 100px 0 auto;
+  }
+
+  @media (width < 900px) {
+    display: none;
+  }
 }

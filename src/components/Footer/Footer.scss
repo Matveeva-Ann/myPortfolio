@@ -4,8 +4,19 @@
   color: #000;
   font-weight: 600;
   background-image: url(../../assets/icons/footer-blob.svg);
-  height: 260px;
+  height: 290px;
   display: flex;
   align-items: flex-end;
   padding: 10px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsList {
+  font-size: 17px;
+}
+
+.contactsItem {
+  display: flex;
+  gap: 10px;
 }

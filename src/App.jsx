@@ -3,6 +3,7 @@ import AppRoutes from "./AppRoutes";
 import Home from "./pages/Home/Home";
 
 function App() {
+  
   return (
     <>
       <AppRoutes />

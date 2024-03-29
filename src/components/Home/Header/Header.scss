@@ -9,18 +9,55 @@
   max-width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  @media (width < 1300px) {
+    justify-content: space-between;
+  }
+
+  @media (width < 900px) {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+
+  @media (width < 750px) {
+    padding: 0 20px;
+  }
 }
 
 .navigation {
   display: flex;
   gap: 35px;
   font-size: 30px;
+
+  @media (width < 1200px) {
+    font-size: 20px;
+  }
+
+  @media (width < 900px) {
+    gap: 25px;
+  }
+}
+
+.navDesktop {
+  @media (width < 749px) {
+    display: none;
+  }
+}
+
+.headerMobile {
+  @media (width > 750px) {
+    display: none;
+  }
 }
 
 .logo {
   font-size: 35px;
   font-family: 'GloriaHallelujah-Regular';
+
+  @media (width < 1200px) {
+    font-size: clamp(15px, 3.33vw, 25px);
+  }
 }
 
 .navigation__link {
@@ -39,6 +76,10 @@
   font-size: 24px;
   cursor: pointer;
   margin-right: 30px;
+
+  @media (width < 750px) {
+    display: none;
+  }
 }
 
 .headerNuv__wrapper {
@@ -52,6 +93,10 @@
 
   &--resume {
     cursor: pointer;
+
+    @media (width < 750px) {
+      font-size: clamp(15px, 3.33vw, 25px);
+    }
   }
 }
 
@@ -64,12 +109,25 @@
   color: var(--textColor);
   display: none;
 
+  @media (width < 1200px) {
+    width: 105px;
+    height: 50px;
+  }
+
   &--long {
     width: 160px;
+
+    @media (width < 1200px) {
+      width: 120px;
+    }
   }
 
   &--shirt {
     width: 115px;
+
+    @media (width < 1200px) {
+      width: 90px;
+    }
   }
 }
 
@@ -77,4 +135,13 @@
   &.active+.nav-circle {
     display: block;
   }
+}
+
+.headerMobile__btn {
+  background-color: transparent;
+  color: var(--textColor);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: clamp(14px, 3.33vw, 25px);
 }

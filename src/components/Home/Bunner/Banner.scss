@@ -1,16 +1,18 @@
-
 .banner__img {
   max-width: 450px;
   width: 100%;
-  height: auto; 
+  height: auto;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   margin: 0 auto 20px;
 }
 
 .banner__wrapper {
-  position: relative;
   width: 50%;
+
+  @media (width < 900px) {
+    display: none;
+  }
 }
 
 .banner__infoLeft {
@@ -19,12 +21,16 @@
   left: -5px;
   display: flex;
   gap: 20px;
+
+  @media (width < 1200px) {
+    top: 0px;
+  }
 }
 
 .banner__BtnInfo {
   position: absolute;
-  bottom: -50px;
-  right: -50px;
+  bottom: -25px;
+  right: -65px;
   display: flex;
   gap: 20px;
 }
@@ -35,12 +41,25 @@
   font-family: 'GloriaHallelujah-Regular';
   font-size: 15px;
   color: var(--textColorSecondary);
-  transform: rotate(5deg);
+  transform: rotate(-15deg);
+
+  @media (width < 1200px) {
+    max-width: 130px;
+    font-size: 12px;
+  }
 }
 
 .banner__arrow {
   transform: rotate(30deg);
   color: var(--textColorSecondary);
+
+  @media (width < 1400px) {
+    margin-top: -20px;
+  }
+  @media (width < 1200px) {
+    transform: rotate(60deg);
+    margin-top: -20px;
+  }
 }
 
 .banner__btnGame {
@@ -58,12 +77,16 @@
 }
 
 .banner__btnGame--arrow {
-  transform: rotate(-150deg);
+  transform: rotate(-165deg);
   color: var(--textColorSecondary);
 }
 
 .banner__BtnInfoText {
-  margin-top: 10px;
+  margin-top: 0px;
   color: var(--textColorSecondary);
   font-size: 14px;
+}
+
+.banner__imgWrapper {
+  position: relative;
 }
