@@ -1,4 +1,5 @@
 import img from "../../assets/Дизайн без назви (1).png";
+import Title from "../Title/Title";
 import "./AboutMainInfo.scss";
 
 export default function AboutMainInfo() {
@@ -8,7 +9,7 @@ export default function AboutMainInfo() {
       <div className="aboutMainInfo">
         
         <div className="aboutMainInfo__wrapper">
-          <h3>BIOGRAPHY</h3>
+          <Title>BIOGRAPHY</Title>
           <p className="aboutMainInfo__text">
             In 2022, I decided to make a radical change in my life and therefore
             began searching for a job that I would truly enjoy. After trying out

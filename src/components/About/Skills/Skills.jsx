@@ -1,3 +1,4 @@
+import Title from "../../Title/Title";
 import "./Skills.scss";
 
 export default function Skills() {
@@ -28,7 +29,6 @@ export default function Skills() {
     const animationDuration =
       Math.floor(Math.random() * (maxDuration - minDuration + 1)) + minDuration;
     const randomPosition = Math.floor(Math.random() * (360 - 0 + 1)) + 0;
-    console.log(randomPosition);
     const translateValue = 500 - index * 50;
     return {
       '--animationDuration': `${animationDuration}s`,
@@ -38,7 +38,7 @@ export default function Skills() {
 
   return (
     <div className="skillsWrapper">
-      <h2 className="skills__title">Skills</h2>
+      <Title>Skills</Title>
       <div className="skills">
         {skillsArr.map((skill, index) => (
           <div className="orbit" style={getOrbitStyles(index)} key={skill}>

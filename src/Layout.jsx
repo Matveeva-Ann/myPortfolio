@@ -5,9 +5,9 @@ import SideBar from "./components/SideBar/SideBar";
 
 export default function Layout() {
   return (
-    <div>
+    <div style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
       <Header></Header>
-      <main>
+      <main style={{flexGrow: '1'}}>
         <SideBar></SideBar>
         <Outlet></Outlet>
       </main>

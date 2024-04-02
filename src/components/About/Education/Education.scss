@@ -1,0 +1,57 @@
+
+.educationCard {
+  position: relative;
+  padding: 0px 20px 30px;
+}
+
+.education__list {
+  margin: 0 auto;
+  position: relative;
+  max-width: 750px;
+  padding-bottom: 150px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: var(--before-height, 0px);
+    max-height: 458px;
+    background-color: black;
+    position: absolute;
+    top: 22px;
+    left: -3px;
+  }
+}
+
+.educationCard__point {
+  position: absolute;
+  top: 13px;
+  left: -13px;
+  font-size: 23px;
+}
+
+.educationCard__title {
+  display: flex;
+  gap: 0 10px;
+  flex-wrap: wrap;
+  font-size: 28px;
+  line-height: 30px;
+}
+
+.educationCard__title--color {
+  color: rgb(253 45 120);
+}
+
+.educationCard__time {
+  color: rgba(27,27,27,.75);
+  font-size: 18px;
+}
+
+.educationCard__text {
+  font-size: 22px;
+}
+
+.educationWrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
