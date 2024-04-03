@@ -1,14 +1,14 @@
 body {
   background-color: var(--backgroundColor);
-  font-family: 'Kurale-Regular';
+  font-family: "Kurale-Regular";
   font-size: 15px;
   overflow-y: scroll;
 }
 
 :root {
-  --textColor: #fff; 
-  --textColorSecondary: rgb(0 255 255); 
-  --BGColor: rgb(2, 63, 81); 
+  --textColor: #fff;
+  --textColorSecondary: rgb(0 255 255);
+  --BGColor: rgb(2, 63, 81);
 }
 
 ::-webkit-scrollbar {

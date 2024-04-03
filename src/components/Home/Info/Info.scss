@@ -17,5 +17,7 @@
 
   @media (width < 750px) {
     font-size: clamp(14px, 3.2vw, 20px);
+    padding: 5px;
+    margin: 0 0 25px 0;
   }
 }

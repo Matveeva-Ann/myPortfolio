@@ -4,6 +4,10 @@
   background-color: var(--BGColor);
   color: var(--textColor);
   height: 77px;
+
+  @media (width < 550px) {
+    height: 47px;
+  }
 }
 
 .header--width {
