@@ -3,6 +3,7 @@
   font-family: 'Kurale-Regular';
   background-color: var(--BGColor);
   color: var(--textColor);
+  height: 77px;
 }
 
 .header--width {
@@ -46,11 +47,56 @@
 }
 
 .headerMobile {
+  position: relative;
   @media (width > 750px) {
     display: none;
   }
 }
 
+.navMobile {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vw;
+  min-height: 340px;
+  z-index: 101;
+  backdrop-filter: blur(5px); 
+}
+
+.headerMobile__btnClose {
+  display: block;
+  margin-left: auto;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 10px 10px 0;
+  font-size: 20px;
+}
+
+.navigationMobile__list {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+
+  
+}
+
+.navigationMobile__link {
+  color: #fff;
+  &.active {
+    color: rgb(253 45 120);
+    font-weight: 800;
+    text-decoration: underline;
+  }
+}
 .logo {
   font-size: 35px;
   font-family: 'GloriaHallelujah-Regular';

@@ -1,4 +1,3 @@
-
 .footer {
   background-color: var(--BGColor);
   color: #000;
@@ -10,9 +9,20 @@
   padding: 10px 50px;
   display: flex;
   justify-content: space-between;
+
+  @media (width < 600px) {
+    padding: 10px 20px;
+  }
 }
 
 .contactsItem {
   display: flex;
   gap: 10px;
+  margin-left: 10px;
+
+  @media (width < 400px) {
+    flex-direction: column;
+    gap: 2px;
+
+  }
 }

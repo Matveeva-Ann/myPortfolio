@@ -9,6 +9,10 @@
   color: var(--textColor);
   font-size: 20px;
   padding: 20px 0;
+
+  @media (width < 600px) {
+    width: 90%;
+  }
 }
 
 .projects__list {
@@ -17,4 +21,8 @@
 
 .projects__list li:nth-child(even) .projectCard__wrapper {
   flex-direction: row-reverse;
+
+  @media (width < 950px) {
+    flex-direction: column;
+  }
 }

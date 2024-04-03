@@ -4,24 +4,40 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(100vh - 555px );
+  height: calc(100vh - 555px);
   color: var(--textColor);
 }
 
 .contacts__item {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
+  width: 100%;
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 20px;
+
+
+  @media (width < 750px) {
+    font-size: clamp(16px, 3.4vw, 24px);
+  }
 }
 
 .contacts__link {
   transition: color 250ms linear;
   font-weight: 700;
-
+  
   &:hover {
     color: rgb(0 255 255);
+  }
+
+  @media (max-width: 440px) {
+    padding: 0 20px;
+    width: 100vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
 

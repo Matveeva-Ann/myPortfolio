@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <div className="banner__wrapper">
       <div className="banner__imgWrapper">
-        <img src={img} alt="girl with laptop" className="banner__img" />
+        <img src={img} alt="girl with laptop" className="banner__img" style={{minHeight: '25vw'}}/>
         <div className="banner__infoLeft">
           <p className="banner__infoText">
             This is not just an image — it's an interpretation of me by AI

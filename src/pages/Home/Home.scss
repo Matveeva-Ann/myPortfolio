@@ -7,6 +7,7 @@
 .home__infoWrapper {
   padding: 30px;
   display: flex;
+  min-height: 50vh;
 
   @media (width < 1200px) {
     padding-top: 50px;

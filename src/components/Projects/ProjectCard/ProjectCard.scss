@@ -4,8 +4,11 @@
   gap: 50px;
   font-size: 20px;
   margin-bottom: 50px;
-}
 
+  @media (width < 950px) {
+    flex-direction: column;
+  }
+}
 
 .projectCard__imgFrame {
   padding: 20px;
@@ -14,6 +17,14 @@
   width: 40%;
   max-height: 300px;
   box-shadow: 7px 7px 0px rgba(0, 0, 0, 0.5);
+
+  @media (width < 950px) {
+    width: 80%;
+  }
+
+  @media (width < 600px) {
+    width: 90%;
+  }
 }
 
 .projectCard__img {
@@ -26,6 +37,13 @@
 .projectCard__info {
   width: 60%; 
   font-size: 18px;
+
+  @media (width < 950px) {
+    width: 80%;
+  }
+  @media (width < 600px) {
+    width: 90%;
+  }
 }
  
 .projectCard__text--bold {
